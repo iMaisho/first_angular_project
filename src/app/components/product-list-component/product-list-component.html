@@ -1,0 +1,12 @@
+<ul>
+    @for(product of products; track product.id) {
+<li>{{product.name}} : {{product.price}}€</li>
+@if (product.inStock) {
+    <p style="color:green">En Stock</p>
+}
+@else {
+        <p style="color:red">Epuisé</p>
+
+}
+    }
+    </ul>

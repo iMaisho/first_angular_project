@@ -3,10 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { UserCardComponent } from './components/user-card-component/user-card-component';
 import { User } from './interfaces/user';
+import { TodoListComponent } from './components/todo-list-component/todo-list-component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, UserCardComponent],
+  imports: [RouterOutlet, Header, UserCardComponent, TodoListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

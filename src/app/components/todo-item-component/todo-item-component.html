@@ -1,0 +1,4 @@
+<li><p>{{toDo.title}}</p>
+<input type="checkbox" [(ngModel)]="toDo.isCompleted" (change)="toggleCompletion()">
+<button (click)="deleteTodo()">Supprimer</button>
+</li>

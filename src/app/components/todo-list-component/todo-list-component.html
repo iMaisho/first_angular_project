@@ -1,0 +1,1 @@
+<ul ><app-todo-item-component *ngFor="let toDo of todoList" [toDo]="toDo" (emitRequest)="handleTaskCompletion($event)" (deleteRequest)="handleTaskDelete($event)"></app-todo-item-component></ul>

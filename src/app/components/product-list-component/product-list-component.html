@@ -1,6 +1,6 @@
 <ul>
     @for(product of products; track product.id) {
-<li>{{product.name}} : {{product.price}}€</li>
+<li>{{product.name | titlecase}} : {{product.price | currency:'EUR':'symbol':'1.2-2'}}</li>
 @if (product.inStock) {
     <p style="color:green">En Stock</p>
 }
@@ -8,5 +8,7 @@
         <p style="color:red">Epuisé</p>
 
 }
+    <p>Date de sortie: {{product.releaseDate | date:"dd/mm/yyyy"}}</p>
+
     }
     </ul>

@@ -5,11 +5,12 @@ import { UserCardComponent } from './components/user-card-component/user-card-co
 import { User } from './interfaces/user';
 import { TodoListComponent } from './components/todo-list-component/todo-list-component';
 import { ProductListComponent } from "./components/product-list-component/product-list-component";
+import { ThemedPanelComponent } from './components/themed-panel/themed-panel';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, UserCardComponent, TodoListComponent, ProductListComponent],
+  imports: [RouterOutlet, Header, UserCardComponent, TodoListComponent, ProductListComponent, ThemedPanelComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
